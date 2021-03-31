@@ -3,7 +3,8 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                echo "========executing build ========"
+                echo "========executing build ============"
+                sh ./gradlew build --no-daemon
             }
         }
     }
